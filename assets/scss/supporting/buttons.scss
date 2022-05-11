@@ -1,0 +1,85 @@
+/* Buttons
+----------------------------------------------------------------------------- */
+.center-btn {
+  margin: 0 auto;
+  display: block;
+}
+
+.events-btn {
+  padding: 1em 2em;
+  font-weight: 700;
+}
+
+.btn {
+  h5 {
+    margin: 0;
+  }
+}
+
+.btn-brown {
+  color: #fff;
+  background-color: $brown;
+  border-color: $brown;
+}
+.btn-yellow {
+  color: $blue;
+  background-color: $yellow;
+  border-color: $yellow;
+}
+
+.btn-brown:hover {
+  color: #fff;
+  background-color: $black;
+  border-color: $black;
+}
+
+.archive-pagination.pagination {
+  .pagination-next a {
+	color: #fff;
+	background-color: $black;
+	border-color: $black;
+  }
+  .pagination-previous a {
+	color: #fff;
+	background-color: $black;
+	border-color: $black;
+  }
+}
+
+.btn-brown:focus, .btn-brown.focus {
+  color: #fff;
+  background-color: $black;
+  border-color: $black;
+  box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
+}
+
+.btn-brown.disabled, .btn-brown:disabled {
+  color: #fff;
+  background-color: $brown;
+  border-color: $brown;
+}
+
+.btn-gray {
+  color: #fff;
+  background-color: $gray;
+  border-color: $gray;
+}
+
+.btn-gray:hover {
+  color: #fff;
+  background-color: $black;
+  border-color: $black;
+}
+
+.btn-gray:focus, .btn-gray.focus {
+  color: #fff;
+  background-color: $black;
+  border-color: $black;
+  box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
+}
+
+.btn-gray.disabled, .btn-gray:disabled {
+  color: #fff;
+  background-color: $gray;
+  border-color: $gray;
+}

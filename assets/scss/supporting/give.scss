@@ -1,0 +1,108 @@
+/* Give SCSS
+----------------------------------------------------- */
+
+/* Give Form Styles */
+.give_forms {
+  margin-top: $marginTopx3;
+}
+#give-form-23148-wrap {
+  margin-top: $marginTopx3;
+  padding: 1.618em;
+  border: 10px solid #9B32FF;
+}
+#give-form-23148-content {
+  .summary {
+	background-color: $white;
+  }
+}
+.give-wrap .give-card__body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  order: 2;
+  padding: 1.5rem;
+  justify-content: space-between;
+  height: 300px;
+}
+.bottom-btn button {
+  margin: 0 auto;
+  display: block;
+  width: 60%;
+}
+.give_forms-template-default.postid-23148 {
+  background-image: url("https://100blackmenba.org/wp-content/uploads/2020/01/100-Gala-2019-1429-scaled.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: -1;
+  background-size: cover;
+}
+/*==================*/
+
+
+
+
+#give-recurring-form .form-row-two-thirds, form.give-form .form-row-two-thirds, form[id*=give-form] .form-row-two-thirds {
+  div {
+	width: 100%;
+  }
+}
+
+#give_purchase_form_wrap {
+  .give-fl-wrap.give-fl-wrap-input,
+  .give-fl-wrap.give-fl-wrap-textarea {
+	width: 100%;
+  }
+}
+[id*=give-form] div.summary {
+  width: 100% !important;
+  float: none !important;
+}
+
+.give-featured-image {
+  margin: 1.618em auto;
+}
+
+.give-btn {
+  background: $black !important;
+  border: 1px solid $black !important;
+  color: $white !important;
+  padding: 8px 10px !important;
+  cursor: pointer !important;
+  line-height: 1.2em !important;
+  font-size: 1em !important;
+}
+
+.give-btn:hover {
+  background: $gray !important;
+  border: 1px solid $gray !important;
+}
+
+form[id*=give-form] .give-donation-amount .give-currency-symbol {
+  background-color: $black !important;
+  border-top: 1px solid $black !important;
+  border-bottom: 1px solid $black !important;
+  color: $white !important;
+  margin: 0;
+  padding: 0 12px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 18px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+}
+
+#primary {
+  .give-main.site-main.site-inner {
+	margin-top: $marginTopx3 ;
+  }
+}
+
+.give {
+  .give-wrap {
+	width: 60%;
+	margin: 0 auto;
+  }
+}

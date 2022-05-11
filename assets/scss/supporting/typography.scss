@@ -1,0 +1,20 @@
+body {
+  font-size: $body;
+}
+
+.h1, .site-header .site-title, h1 {
+  font-size: 4.5rem;
+}
+
+.h2, h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+/*Single pages Modifications*/
+.h2-line {
+  font-size: 7vh;
+  color: #2F56A6;
+  border-bottom: 2px solid #F8BD26;
+  display: flex;
+}

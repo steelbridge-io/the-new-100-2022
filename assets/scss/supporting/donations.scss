@@ -1,0 +1,145 @@
+/** SCSS Donations Template
+================================= */
+.donations-modal-body {
+  .give-form-wrap {
+	.give-form-content-wrap {
+	  display: none;
+	  img {
+		display: none;
+	  }
+	}
+  }
+}
+#general-section {
+  .row {
+	align-items: center;
+  }
+  button {
+	background-color: $blue;
+	border-color: $blue;
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+  }
+  &.card {
+	border: none;
+  }
+}
+#donation-fund-desc {
+  &.card {
+	border: none;
+  }
+}
+#donate-btns {
+  justify-content: center;
+  .btn {
+	padding: 4.2rem 0.5rem;
+  }
+}
+.modal-content.donations-modal {
+  background-color: $white;
+}
+.modal-body.donations-modal-body {
+  color: $black;
+}
+.btn-primary.btn-donations {
+  background-color: $blue;
+  border-radius: 0;
+}
+#donate-btns {
+  .donate-btn {
+	display: flex;
+  }
+  button {
+	width: 100%;
+	background-color: $blue;
+	border-color: $blue;
+	flex: 1;
+  }
+}
+
+.page-template-donations-template {
+  .site-container {
+	.site-inner {
+	  padding: 0 0 0 0;
+	}
+  }
+}
+
+/** SCSS for Donations Page
+------------------------------------------ */
+@media (min-width: 1200px) {
+  .narrow-donation {
+	.entry-content {
+	  #give-form-23152-wrap,
+	  .give-form-content-wrap,
+	  .give-form-content-wrap p,
+	  .give-form {
+		width: 70%;
+		margin: 0 auto;
+
+		h2 {
+		  width: 100%;
+		  margin-bottom: 1em;
+		}
+	  }
+
+	  .give-wrap {
+		width: 50%;
+		margin: 0 auto;
+	  }
+	}
+
+	.give-form-content-wrap p {
+	  width: 100% !important;
+	}
+  }
+}
+
+.give-wrap {
+  .give-card__body {
+	padding: 1.5rem .5rem;
+	min-height: 333px;
+
+	h3 {
+	  width: 100%;
+	}
+
+	p {
+	  width: 100%;
+	}
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  #general-section {
+	button {
+	  margin-top: 1.618em;
+	}
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {}
+
