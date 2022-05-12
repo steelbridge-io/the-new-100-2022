@@ -26,8 +26,9 @@ function add_slider_front_page() {
   $hero_desc		= get_theme_mod('hero_desc', $default );
   $wst_slider1		= get_theme_mod('wst_slider1', $default );
   ?>
-
-	<?php if($videoUrl !== $default ) : ?>
+	<?php if ( is_plugin_active( 'revslider/revslider.php' ) ) : ?>
+	<?php echo do_shortcode('[rev_slider alias="ai-robotics-website-slider"][/rev_slider]'); ?>
+	<?php elseif($videoUrl !== $default ) : ?>
 	<div id="hero-section">
 	  <div id="header-video" >
 		<div class="overlay"></div>
