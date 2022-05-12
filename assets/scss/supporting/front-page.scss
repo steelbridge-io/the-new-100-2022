@@ -311,9 +311,35 @@ Max Width Media Queries
 
   // Medium devices (tablets, less than 992px)
   @media (max-width: 991.98px) {
+
+	#front-page-one-mobile-open {
+	  p {
+		padding: 0;
+		margin-bottom: 0;
+	  }
+	  width: 100%;
+	  img {
+		margin: 0 auto;
+	  }
+	}
+
+	#front-page-one-open {
+	  display: none;
+	}
+
+	#fplmobile{
+	  background-color: #F6BD26;
+	  padding-top: 1.618em;
+	  padding-bottom: 1.618em;
+	  .container {
+		margin: 0 auto;
+	  }
+	}
+
 	.joinus.col-md-3 {
 	  max-width: none;
 	}
+
 	.joinus.offset-lg-3 {
 	  margin-left: unset;
 	}
@@ -378,6 +404,17 @@ Max Width Media Queries
 
   // Small devices (landscape phones, less than 768px)
   @media (max-width: 767.98px) {
+
+	#fplmobile{
+	  padding-top: 1.818em;
+	}
+
+	#front-page-one-mobile-open {
+	  img {
+		margin-bottom: 1.618em;
+	  }
+	}
+
 	.btn.btn-gray.sign-me-up {
 	  width: 100%;
 	}
@@ -497,6 +534,11 @@ Min Width Media Queries
 
   // Large devices (desktops, 992px and up)
   @media (min-width: 992px) {
+
+	#front-page-one-mobile-open {
+	  display: none;
+	}
+
 	#mid-slider-fp-1,
 	#mid-slider-fp-2,
 	#mid-slider-fp-3,

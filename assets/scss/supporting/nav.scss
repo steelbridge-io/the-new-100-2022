@@ -2,11 +2,8 @@
 ----------------------------------------------------------------------------- */
 
 #bs-example-navbar-collapse-1, #nav-primary {
-
   font-family: 'Lato', sans-serif !important;
-
 }
-
 
 @media (min-width: 1200px ) {
   .dropright {
@@ -232,6 +229,7 @@ a.sub-nav-active {
 
   // Medium devices (tablets, less than 992px)
   @media (max-width: 991.98px) {
+
 	#menu-primary.sm-collapsible {
 	  align-items: initial;
 	  padding: 1.618em;
@@ -242,6 +240,11 @@ a.sub-nav-active {
 		text-align: center;
 	  }
 	}
+
+	#sub-nav-fp {
+	  display: none;
+	}
+
   }
 
   // Small devices (landscape phones, less than 768px)
