@@ -44,6 +44,7 @@ function bfg_do_meta() {
 	// Jumbotron
 	if ( is_front_page() && is_active_sidebar( 'home-featured' ) ) add_action( 'genesis_header', 'bfg_do_home_featured' );
 	if ( is_front_page() && is_active_sidebar( 'frontpage-one' ) ) add_action( 'genesis_before_content', 'wst_do_frontpage_one' );
+	if ( is_front_page() && is_active_sidebar( 'frontpage-one-mobile' ) ) add_action( 'genesis_before_content', 'wst_do_frontpage_one_mobile' );
 	//if ( is_front_page() && is_active_sidebar( 'frontpage-two' ) ) add_action( 'genesis_after_content', 'wst_do_frontpage_two', 10 );
 	if ( is_front_page() && is_active_sidebar( 'frontpage-two' ) ) add_action( 'loop_start', 'wst_do_frontpage_two', 5 );
 	if ( is_front_page() && is_active_sidebar( 'frontpage-three' ) ) add_action( 'genesis_after_content', 'wst_do_frontpage_three', 15 );
@@ -78,7 +79,7 @@ function bfg_do_home_featured() {
 // Front Page Widget One
 function wst_do_frontpage_one() {
 	genesis_markup( array(
-		'open' => '<div %s>',
+		'open' => '<div id="front-page-one-open" %s>',
 		'context' => 'frontpage-one'
 	) );
 
@@ -94,6 +95,28 @@ function wst_do_frontpage_one() {
 	genesis_markup( array(
 		'close' => '</div>',
 		'context' => 'frontpage-one'
+	) );
+}
+
+// Front Page Widget One - Mobile
+function wst_do_frontpage_one_mobile() {
+	genesis_markup( array(
+		'open' => '<div id="front-page-one-mobile-open" %s>',
+		'context' => 'frontpage-one-mobile'
+	) );
+
+	genesis_structural_wrap( 'frontpage-one-mobile' );
+
+	genesis_widget_area( 'frontpage-one-mobile', array(
+		'before' => '<div class="container-fluid">',
+		'after' => '</div>'
+	) );
+
+	genesis_structural_wrap( 'frontpage-one-mobile', 'close' );
+
+	genesis_markup( array(
+		'close' => '</div>',
+		'context' => 'frontpage-one-mobile'
 	) );
 }
 

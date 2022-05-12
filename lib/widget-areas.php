@@ -34,6 +34,12 @@ function bfg_register_sidebars() {
 	));
 
 	genesis_register_sidebar( array(
+		'id' => 'frontpage-one-mobile',
+		'name' => __( 'Front Page One Mobile', 'bootstrap-for-genesis' ),
+		'description' => __( 'Adds content to the 1st widgetized area.', 'bootstrap-for-genesis' )
+	));
+
+	genesis_register_sidebar( array(
 		'id' => 'frontpage-two',
 		'name' => __( 'Front Page Two', 'bootstrap-for-genesis' ),
 		'description' => __( 'Adds content to the 2nd widgetized area.', 'bootstrap-for-genesis' )
