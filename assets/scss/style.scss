@@ -12,6 +12,8 @@
  * Template: genesis
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather:wght@300;400&family=Playfair+Display&display=swap');
+
 // Bootstrap Core Variable Override
 @import "supporting/variables-bootstrap-core-override";
 
@@ -101,9 +103,6 @@
 // Side Nav
 @import "supporting/side-nav";
 
-// Typography
-@import "supporting/typography";
-
 // About Us Template
 @import "supporting/about-us-template";
 
@@ -145,3 +144,6 @@
 
 // Donations Template
 @import "supporting/donations";
+
+// Typography
+@import "supporting/typography";

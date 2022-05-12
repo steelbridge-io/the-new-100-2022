@@ -2,6 +2,47 @@ body {
   font-size: $body;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+h5 {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+h6 {
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+p {
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
 .h1, .site-header .site-title, h1 {
   font-size: 4.5rem;
 }
