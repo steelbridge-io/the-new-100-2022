@@ -20,7 +20,7 @@ $midslider6title	= get_theme_mod('midslider6title', $default);
 $midsldr6text		= get_theme_mod('midsldr6text', $default);
 
 ?>
-<div class="container-fluid">
+<div id="mid-slider-front-page" class="container-fluid">
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
 	  <ol class="carousel-indicators">
         <?php if($wst_mid_slider1 !== $default) : ?>

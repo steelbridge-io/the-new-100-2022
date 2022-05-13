@@ -312,6 +312,10 @@ Max Width Media Queries
   // Medium devices (tablets, less than 992px)
   @media (max-width: 991.98px) {
 
+	#mid-slider-front-page {
+	  display: none;
+	}
+
 	#front-page-one-mobile-open {
 	  p {
 		padding: 0;
