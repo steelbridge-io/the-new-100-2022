@@ -34,6 +34,9 @@
 }
 #donate-btns {
   justify-content: center;
+  .donate-btn {
+	margin: .5em;
+  }
   .btn {
 	padding: 4.2rem 0.5rem;
   }
@@ -114,7 +117,11 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+  .modal-dialog {
+	max-width: 800px;
+  }
+}
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {}
