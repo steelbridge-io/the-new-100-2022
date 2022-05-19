@@ -35,6 +35,15 @@
 
   /** Front Page News
   ================================ */
+  #front-page-news-inner-wrap {
+	padding-top: 3.618em;
+  }
+  .join-us-img {
+	display: flex;
+  }
+  #front-page-three-open {
+	background-color: $brown;
+  }
   .featured-image {
 	height: 100%;
 	img {
@@ -291,6 +300,12 @@
   text-align: center;
 }
 
+.join-us-img {
+  img {
+	object-fit: cover;
+  }
+}
+
 
 /*
 ----------------------------------
@@ -302,21 +317,57 @@ Max Width Media Queries
 
 
   // Large devices (desktops, less than 1200px)
-  @media (max-width: 1199.98px) {
-	#join-us-section {
-	  padding-top:$em1;
-	}
-  }
+  @media (max-width: 1199.98px) { }
 
 
   // Medium devices (tablets, less than 992px)
   @media (max-width: 991.98px) {
+
+	#front-page-two-inner-wrap {
+	  h3 {
+		margin-top: 1.618em;
+		margin-bottom: 1.618em;
+	  }
+	}
+
+	.join-us h3 {
+	  margin: 0;
+	}
+
+	.join-us-img {
+	  width: 77%;
+	  margin: 0 auto;
+	  img {
+		padding-bottom: 1.618em;
+	  }
+	}
+
+	#news-title.container-fluid {
+	  padding-left: 1.618em !important;
+	  padding-right: 1.618em !important;
+	}
+
+	#front-page-mentoring-container {
+	  p {
+	   margin-top: 1.618em;
+	   margin-bottom: 1.618em !important;
+	  }
+
+	  button {
+	  margin-bottom: 1.618em;
+	  }
+	}
+
+	.fp-two-mobile-title {
+	  font-size: 2rem;
+	}
 
 	#mid-slider-front-page {
 	  display: none;
 	}
 
 	#front-page-one-mobile-open {
+	  padding: 1.618em;
 	  p {
 		padding: 0;
 		margin-bottom: 0;
@@ -328,6 +379,10 @@ Max Width Media Queries
 	}
 
 	#front-page-one-open {
+	  display: none;
+	}
+
+	#front-page-four-open {
 	  display: none;
 	}
 
@@ -409,6 +464,25 @@ Max Width Media Queries
   // Small devices (landscape phones, less than 768px)
   @media (max-width: 767.98px) {
 
+	h3.fp-giving {
+	  text-align: center;
+	  margin: 1.618em auto;
+	  display: block;
+	  font-weight: bolder;
+	  font-size: 1.7rem;
+	}
+	.fp-giving.lead-large {
+	  text-align: center;
+	  line-height: 1.3;
+	  margin: 1.618em 0 0 0;
+	}
+
+	.lead-large {
+	  &.yellow {
+		color: $yellow;
+	  }
+	}
+
 	#fplmobile{
 	  padding-top: 1.818em;
 	}
@@ -419,7 +493,7 @@ Max Width Media Queries
 	  }
 	}
 
-	.btn.btn-gray.sign-me-up {
+	.btn.btn-yellow.sign-me-up {
 	  width: 100%;
 	}
 	.carousel-caption {
@@ -526,7 +600,7 @@ Min Width Media Queries
 	  width: 76%;
 	  height: auto;
 	}
-	.btn.btn-gray.sign-me-up {
+	.btn.btn-yellow.sign-me-up {
 	  width: 100%;
 	}
   }
@@ -539,7 +613,20 @@ Min Width Media Queries
   // Large devices (desktops, 992px and up)
   @media (min-width: 992px) {
 
+	#front-page-two-mobile-open {
+	  display: none;
+	}
+
 	#front-page-one-mobile-open {
+	  display: none;
+	}
+	#news-widget-area-mobile {
+	  display: none;
+	}
+	#front-page-three-mobile-open {
+	  display: none;
+	}
+	#front-page-four-mobile-open {
 	  display: none;
 	}
 
