@@ -142,9 +142,8 @@
 
 /** Widget #1
 ================================ */
-.front-page-one-button h5,
 .front-page-two-button h5 {
-  font-size: 2rem;
+  font-size: 1rem;
   margin: 0;
 }
 .frontpage-two .container {
@@ -170,12 +169,11 @@
   align-items: center;
   justify-content: center;
   letter-spacing: 1.5px;
-  background-color: $yellow;
+  background-color: $brown;
   h3 {
 	font-size: 2rem;
-	background-color: $gray;
+	background-color: $brown;
 	width: 40%;
-	margin: 2em auto 1em;
 	padding: .5em 0;
 	color: $white;
 	height: 72px;
