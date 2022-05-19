@@ -47,8 +47,11 @@ function bfg_do_meta() {
 	if ( is_front_page() && is_active_sidebar( 'frontpage-one-mobile' ) ) add_action( 'genesis_before_content', 'wst_do_frontpage_one_mobile' );
 	//if ( is_front_page() && is_active_sidebar( 'frontpage-two' ) ) add_action( 'genesis_after_content', 'wst_do_frontpage_two', 10 );
 	if ( is_front_page() && is_active_sidebar( 'frontpage-two' ) ) add_action( 'loop_start', 'wst_do_frontpage_two', 5 );
+	if ( is_front_page() && is_active_sidebar( 'frontpage-two-mobile' ) ) add_action( 'loop_start', 'wst_do_frontpage_two_mobile', 5 );
 	if ( is_front_page() && is_active_sidebar( 'frontpage-three' ) ) add_action( 'genesis_after_content', 'wst_do_frontpage_three', 15 );
+	if ( is_front_page() && is_active_sidebar( 'frontpage-three-mobile' ) ) add_action( 'genesis_after_content', 'wst_do_frontpage_three_mobile', 15 );
 	if ( is_front_page() && is_active_sidebar( 'frontpage-four' ) ) add_action( 'genesis_after_content', 'wst_do_frontpage_four', 20 );
+	if ( is_front_page() && is_active_sidebar( 'frontpage-four-mobile' ) ) add_action( 'genesis_after_content', 'wst_do_frontpage_four_mobile', 20 );
 
 	// Body Class
 	add_filter( 'body_class', 'bfg_body_class' );
@@ -123,7 +126,7 @@ function wst_do_frontpage_one_mobile() {
 // Front Page Widget Two
 function wst_do_frontpage_two() {
 	genesis_markup( array(
-		'open' => '<div %s>',
+		'open' => '<div id="front-page-two-open" %s>',
 		'context' => 'frontpage-two'
 	) );
 
@@ -142,10 +145,32 @@ function wst_do_frontpage_two() {
 	) );
 }
 
+// Front Page Widget Two - Mobile
+function wst_do_frontpage_two_mobile() {
+	genesis_markup( array(
+		'open' => '<div id="front-page-two-mobile-open" %s>',
+		'context' => 'frontpage-two-mobile'
+	) );
+
+	genesis_structural_wrap( 'frontpage-two-mobile' );
+
+	genesis_widget_area( 'frontpage-two-mobile', array(
+		'before' => '<div class="container">',
+		'after' => '</div>'
+	) );
+
+	genesis_structural_wrap( 'frontpage-two-mobile', 'close' );
+
+	genesis_markup( array(
+		'close' => '</div>',
+		'context' => 'frontpage-two-mobile'
+	) );
+}
+
 // Front Page Widget Three
 function wst_do_frontpage_three() {
 	genesis_markup( array(
-		'open' => '<div %s>',
+		'open' => '<div id="front-page-three-open" %s>',
 		'context' => 'frontpage-three'
 	) );
 
@@ -164,10 +189,32 @@ function wst_do_frontpage_three() {
 	) );
 }
 
+// Front Page Widget Three - Mobile
+function wst_do_frontpage_three_mobile() {
+	genesis_markup( array(
+		'open' => '<div id="front-page-three-mobile-open" %s>',
+		'context' => 'frontpage-three-mobile'
+	) );
+
+	genesis_structural_wrap( 'frontpage-three-mobile' );
+
+	genesis_widget_area( 'frontpage-three-mobile', array(
+		'before' => '<div class="container-fluid">',
+		'after' => '</div>'
+	) );
+
+	genesis_structural_wrap( 'frontpage-three-mobile', 'close' );
+
+	genesis_markup( array(
+		'close' => '</div>',
+		'context' => 'frontpage-three-mobile'
+	) );
+}
+
 // Front Page Widget Four
 function wst_do_frontpage_four() {
 	genesis_markup( array(
-		'open' => '<div %s>',
+		'open' => '<div id="front-page-four-open" %s>',
 		'context' => 'frontpage-four'
 	) );
 
@@ -183,6 +230,28 @@ function wst_do_frontpage_four() {
 	genesis_markup( array(
 		'close' => '</div>',
 		'context' => 'frontpage-four'
+	) );
+}
+
+// Front Page Widget Four - Mobile
+function wst_do_frontpage_four_mobile() {
+	genesis_markup( array(
+		'open' => '<div id="front-page-four-mobile-open" %s>',
+		'context' => 'frontpage-four-mobile'
+	) );
+
+	genesis_structural_wrap( 'frontpage-four-mobile' );
+
+	genesis_widget_area( 'frontpage-four-mobile', array(
+		'before' => '<div class="container-fluid">',
+		'after' => '</div>'
+	) );
+
+	genesis_structural_wrap( 'frontpage-four-mobile', 'close' );
+
+	genesis_markup( array(
+		'close' => '</div>',
+		'context' => 'frontpage-four-mobile'
 	) );
 }
 
