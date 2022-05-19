@@ -27,7 +27,7 @@ function add_slider_front_page() {
   $wst_slider1		= get_theme_mod('wst_slider1', $default );
   ?>
 	<?php if ( is_plugin_active( 'revslider/revslider.php' ) ) : ?>
-	<?php echo do_shortcode('[rev_slider alias="ai-robotics-website-slider"][/rev_slider]'); ?>
+	<?php echo do_shortcode('[rev_slider alias="slider-2"][/rev_slider]'); ?>
 	<?php elseif($videoUrl !== $default ) : ?>
 	<div id="hero-section">
 	  <div id="header-video" >
@@ -91,6 +91,12 @@ function io_front_page_latest_posts() {
     		</div>
  			<?php endif;
 
+		  	/*if ( is_active_sidebar( 'frontpage-news-mobile' ) ) : ?>
+			  <div id="news-widget-area-mobile" class="chw-widget-area widget-area col-9" role="complementary">
+				  <?php dynamic_sidebar( 'frontpage-news-mobile' ); ?>
+			  </div>
+		  	<?php endif;*/
+
 	echo '	</div>
 			</div>
 			</div>';
@@ -120,7 +126,7 @@ function io_front_page_latest_posts() {
 	/* Restore original Post Data */
 	wp_reset_postdata();
   } else {
-	// no posts found
+	 echo 'no posts found';
   }
 }
 
