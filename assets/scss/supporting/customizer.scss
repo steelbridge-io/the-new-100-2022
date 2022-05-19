@@ -87,7 +87,7 @@
 
 @media (max-width: 750px) {
   #fp-news.news-fp .news-excerpt {
-	margin: 0px;
+	margin: 0;
 	margin-bottom: 10px;
 	padding: 10px;
 	background-color: black;
@@ -182,37 +182,6 @@ label[for="give-funds-select"] {
   color: black;
 }
 
-
-#give-donation-level-button-wrap li button {
-  min-width: 150px;
-  border: 2px solid lightgrey !important;
-  background-color: white !important;
-  color: #2653af  !important;
-  font-size: 24px !important;
-}
-
-.give-currency-position-before {
-  text-align: center;
-  font-size: 25px !important;
-  padding-top: 5px !important;
-  min-height: 45px;
-  min-width: 50px !important;
-  border-radius: 2px !important;
-  margin: 1px !important;
-
-}
-#give-amount {
-  min-height: 44.5px;
-  color: #2653af  !important;
-  font-size: 24px !important;
-  border: 2px solid #2653af  !important;
-  text-align: center;
-  background-color: #2653af !important;
-  color: white !important;
-  border-radius: 2px !important;
-  margin: 1px !important;
-}
-
 .give-btn-reveal {
   text-align: center;
   font-size: 20px !important;
@@ -298,9 +267,7 @@ textarea {
   .give-btn-reveal,  #give-purchase-button, #give-amount, textarea {
 	font-size: 20px !important;
   }
-  #give-donation-level-button-wrap li button {
-	font-size: 20px !important;
-  }
+
   #give-form-24044-wrap label {
 	font-size: 20px !important;
   }
