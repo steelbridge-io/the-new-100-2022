@@ -643,16 +643,16 @@ Min Width Media Queries
 		bottom: initial;
 		width: 42vw;
 		transition: 0.5s;
-		h3 {
-		  font-size: calc( 25px + (32 - 16)*(100vw - 400px)/(800 - 400));
-		  background-color: $blue;
-		  padding: .2em 0;
-		}
-		p {
-		  font-size: calc( 14px + (18 - 14)*(100vw - 400px)/(800 - 400));
-		  background-color: rgba(5,5,5,0.5);
-		  padding: 0.618em;
-		}
+		  h3 {
+			  font-size: calc( 18px + (20 - 16)*(100vw - 400px)/(800 - 400));
+			  background-color: $blue;
+			  padding: .2em 0;
+		  }
+		  p {
+			  font-size: calc( 14px + (15 - 14)*(100vw - 400px)/(800 - 400));
+			  background-color: rgba(5,5,5,0.5);
+			  padding: 0.618em;
+		  }
 	  }
 	}
   }
@@ -673,12 +673,12 @@ Min Width Media Queries
 		width: 32vw;
 		transition: 0.5s;
 		h3 {
-		  font-size: calc( 18px + (28 - 16)*(100vw - 400px)/(800 - 400));
+		  font-size: calc( 18px + (20 - 16)*(100vw - 400px)/(800 - 400));
 		  background-color: $blue;
 		  padding: .2em 0;
 		}
 		p {
-		  font-size: calc( 14px + (18 - 14)*(100vw - 400px)/(800 - 400));
+		  font-size: calc( 14px + (15 - 14)*(100vw - 400px)/(800 - 400));
 		  background-color: rgba(5,5,5,0.5);
 		  padding: 0.618em;
 		}
