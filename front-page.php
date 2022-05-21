@@ -27,7 +27,7 @@ function add_slider_front_page() {
   $wst_slider1		= get_theme_mod('wst_slider1', $default );
   ?>
 	<?php if ( is_plugin_active( 'revslider/revslider.php' ) ) : ?>
-	<?php echo do_shortcode('[rev_slider alias="slider-2"][/rev_slider]'); ?>
+	<?php echo do_shortcode('[rev_slider alias="100-slider"][/rev_slider]'); ?>
 	<?php elseif($videoUrl !== $default ) : ?>
 	<div id="hero-section">
 	  <div id="header-video" >
