@@ -55,14 +55,14 @@
   .close {
 	float: right;
 	text-align: right;
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 	font-weight: 700;
 	line-height: 1;
-	color: $white;
+	color: $black;
 	text-shadow: 0 1px 0 #fff;
 	opacity: .5;
 	&:hover {
-	  color: $white;
+	  color: $black;
 	}
 	&:active {
 	  border: none;
