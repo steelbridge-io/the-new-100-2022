@@ -149,7 +149,7 @@ if($menu_locations && $menu_locations['footer'] !=0) :
  ?>
 <div class="container-fluid">
   <div class="row">
-	<div class="col-md-9">
+	<div class="col-lg-7">
 	 <nav id="footer-nav" class="100bmba-footer-nav navbar navbar-expand-md navbar-light" role="navigation">
 
 		 <?php
@@ -167,7 +167,7 @@ if($menu_locations && $menu_locations['footer'] !=0) :
 
 	 </nav>
 	</div>
-	<div class="col-md-3 wellington-sig">
+	<div class="col-lg-5 wellington-sig">
 	  <p class="text-right lead-small">Custom Website Development&nbsp;<a href="https://wellington-studio.com" title="Web Developer">Wellington Studio</a></p>
 	</div>
   </div>
