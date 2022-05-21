@@ -168,7 +168,7 @@ if($menu_locations && $menu_locations['footer'] !=0) :
 	 </nav>
 	</div>
 	<div class="col-md-3 wellington-sig">
-	  <p class="text-right">Custom Website Development&nbsp;<a href="https://wellington-studio.com" title="Web Developer">Wellington Studio</a></p>
+	  <p class="text-right lead-small">Custom Website Development&nbsp;<a href="https://wellington-studio.com" title="Web Developer">Wellington Studio</a></p>
 	</div>
   </div>
 </div>
