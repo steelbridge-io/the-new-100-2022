@@ -12,13 +12,18 @@
 
 	//remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
 
-
 	//* Add custom body class
-	add_filter( 'body_class', 'donation_body_class' );
-	function donation_body_class( $classes ) {
-		$classes[] = 'donations-template';
-		return $classes;
-	}
+	 add_filter('body_class', 'donation_body_class');
+	 function donation_body_class($classes)
+	 {
+		//if (is_page_template('templates/donations-template.php')) {
+		if (is_page( 26679 ) || is_page(26762)) {
+		 $classes[] = 'donations-template-class';
+		}
+		 return $classes;
+	 }
+
+
 
 	add_action('genesis_before_footer', 'add_donations_options', 5);
 	function add_donations_options()

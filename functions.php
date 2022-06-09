@@ -157,6 +157,20 @@ function my_genesis_script() {
 
 		file_put_contents($path_to_file, $file_contents); */
 
+/*function crunchify_delete_all_revisions () {
+
+ global $wpdb;
+
+ // This query will delete all revisions from your Database table.
+ $revision_ids = $wpdb->get_col( $wpdb->prepare( "SELECT `ID` FROM $wpdb->posts WHERE `post_type` = 'revision'") );
+
+ foreach ( $revision_ids as $revision_id ) {
+	wp_delete_post_revision( $revision_id );
+ }
+
+}
+add_action( 'admin_init', 'crunchify_delete_all_revisions' );*/
+
 
 
 
