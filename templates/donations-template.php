@@ -23,8 +23,6 @@
 		 return $classes;
 	 }
 
-
-
 	add_action('genesis_before_footer', 'add_donations_options', 5);
 	function add_donations_options()
 	{
@@ -64,8 +62,12 @@
 		$donation_12 				= get_post_meta(get_the_ID(), 'donation-12', true);
 
 		if ($donation_1_label !== $default || $donation_general_label !== $default) {
+
+		 if($donation_title !== $default) {
 			echo '<div id="donation-template-cont" class="container mb-5">
-						<h2 class="give-form-title">'. $donation_title .'</h2>';
+						<h2 class="give-form-title">' . $donation_title . '</h2>';
+		 }
+
 			if($donation_general_label !== $default) {
 				echo ' <div id="general-section" class="card">
 								<div class="row justify-content-center">
@@ -79,10 +81,13 @@
 							</div>';
 			}
 
-			echo '<div id="donation-fund-desc" class="card mt-5">
-							<p class="lead">'. $donation_fund_desc .'</p>
-						</div>
-						<div id="donate-btns" class="row">
+			if($donation_fund_desc !== $default) {
+			 echo '<div id="donation-fund-desc" class="card mt-5">
+							<p class="lead">' . $donation_fund_desc . '</p>
+						</div> ';
+						}
+
+			 echo '<div id="donate-btns" class="row">
 							<div class="col-md-3 donate-btn">
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
 									' . $donation_1_label . '
