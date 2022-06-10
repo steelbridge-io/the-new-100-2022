@@ -1,11 +1,20 @@
 /** Helpers */
 
+.mobile-edge-margin {
+	margin-left: 10px;
+	margin-right: 10px;
+}
 
-@media (max-width: 575.98px) { }
+
+@media (max-width: 575.98px) {}
 
 @media (max-width: 767.98px) {
 	.w-80-m {
 		width: 50% !important;
+	}
+	.mobile-edge-margin {
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 }
 
