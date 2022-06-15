@@ -17,7 +17,7 @@
 	 function donation_body_class($classes)
 	 {
 		//if (is_page_template('templates/donations-template.php')) {
-		if (is_page( 26679 ) || is_page(26762)) {
+		if (is_page( 26679 ) || is_page(26762) || is_page(26705)) {
 		 $classes[] = 'donations-template-class';
 		}
 		 return $classes;
@@ -88,14 +88,14 @@
 						}
 
 			 echo '<div id="donate-btns" class="row">
-							<div class="col-md-3 donate-btn">
+							<div class="col-md-2 donate-btn">
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
 									' . $donation_1_label . '
 								</button>
 						</div>';
 
 			if ($donation_2_label !== $default) {
-				echo '<div class="col-md-3 donate-btn">
+				echo '<div class="col-md-2 donate-btn">
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target ="#exampleModalLong2">
 								' . $donation_2_label . '
 								</button>
@@ -103,7 +103,7 @@
 			}
 
 			if ($donation_3_label !== $default) {
-				echo '<div class="col-md-3 donate-btn">
+				echo '<div class="col-md-2 donate-btn">
 								<button type = "button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong3">
 								' . $donation_3_label . '
 								</button>
@@ -111,7 +111,7 @@
 			}
 
 			if ($donation_4_label !== $default) {
-				echo '<div class="col-md-3 donate-btn">
+				echo '<div class="col-md-2 donate-btn">
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong4">
 									' . $donation_4_label . '
 								</button>
@@ -119,7 +119,7 @@
 			}
 
 			if ($donation_5_label !== $default) {
-				echo '<div class="col-md-3 donate-btn">
+				echo '<div class="col-md-2 donate-btn">
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong5">
 									' . $donation_5_label . '
 								</button>
@@ -127,7 +127,7 @@
 			}
 
 			if ($donation_6_label !== $default) {
-				echo '<div class="col-md-3 donate-btn">
+				echo '<div class="col-md-2 donate-btn">
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong6">
 									' . $donation_6_label . '
 								</button>
@@ -135,7 +135,7 @@
 			}
 
 			if ($donation_7_label !== $default) {
-				echo '<div class="col-md-3 donate-btn">
+				echo '<div class="col-md-2 donate-btn">
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong7">
 									' . $donation_7_label . '
 								</button>
@@ -143,7 +143,7 @@
 			}
 
 			if ($donation_8_label !== $default) {
-				echo '<div class="col-md-3 donate-btn">
+				echo '<div class="col-md-2 donate-btn">
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong8">
 									' . $donation_8_label . '
 								</button>
@@ -151,7 +151,7 @@
 			}
 
 			if ($donation_9_label !== $default) {
-				echo '<div class="col-md-3 donate-btn">
+				echo '<div class="col-md-2 donate-btn">
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong9">
 									' . $donation_9_label . '
 								</button>
@@ -159,7 +159,7 @@
 			}
 
 			if ($donation_10_label !== $default) {
-				echo '<div class="col-md-3 donate-btn">
+				echo '<div class="col-md-2 donate-btn">
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong10">
 									' . $donation_10_label . '
 								</button>
@@ -167,7 +167,7 @@
 			}
 
 			if ($donation_11_label !== $default) {
-				echo '<div class="col-md-3 donate-btn">
+				echo '<div class="col-md-2 donate-btn">
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong11">
 									' . $donation_11_label . '
 								</button>
@@ -175,7 +175,7 @@
 			}
 
 			if ($donation_12_label !== $default) {
-				echo '<div class="col-md-3 donate-btn">
+				echo '<div class="col-md-2 donate-btn">
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong12">
 									' . $donation_12_label . '
 								</button>

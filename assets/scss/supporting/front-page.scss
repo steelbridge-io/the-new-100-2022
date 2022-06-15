@@ -480,6 +480,9 @@ Max Width Media Queries
 	.lead-large {
 	  &.yellow {
 		color: $yellow;
+		  a {
+			  color: $yellow;
+		  }
 	  }
 	}
 
