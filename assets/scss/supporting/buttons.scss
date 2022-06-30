@@ -2,6 +2,27 @@
 helkp
 ----------------------------------------------------------------------------- */
 
+.gform_button.button {
+	font-family: Lato, Sans-Serif !important;
+	font-weight: 300 !important;
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.tribe-common-c-btn {
+	font-family: Lato, Sans-Serif !important;
+}
+
+.btn:hover {
+	opacity: 0.8;
+}
+
+.btn.become-volunteer {
+	width: 100%;
+	margin: 0 auto;
+}
+
 #donate-btns {
 	.col-md-3 {
 		max-width: 19% !important;
