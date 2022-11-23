@@ -1,0 +1,60 @@
+/*** Scholarship Gala */
+
+.page-id-28056 {
+
+	h1, h2, h3, p {
+		color: #E6EBEF;
+	}
+	.site-container {
+		background-color: #100852;
+		.site-inner {
+			background-color: #100852;
+		}
+	}
+
+	.give-recurring-donors-choice {
+		label {
+			color: #E6EBEF;
+		}
+	}
+
+	.give-btn.give-btn-reveal {
+		border: 1px solid #E6EBEF !important;
+	}
+
+	.scholarship-gala-cont {
+		.gb-layout-column-wrap {
+			display: flex !important;
+			align-items: center !important;
+		}
+	}
+
+	#donate-btns {
+		background-color: #100852;
+		button {
+			background-color: #000000;
+			border-color: #000000;
+		}
+		.donate-btn {
+			background-color: #000000;
+			border: 1px solid #E6EBEF;
+		}
+	}
+
+	.gala-2022-img.img-fluid {
+		width: 70%;
+	}
+
+	.give-form-title {
+		color: #000 !important;
+	}
+
+	.gala-btn {
+		background: transparent !important;
+		border: none !important;
+		padding: 0;
+	}
+	.gala-btn:focus {
+		outline: none !important;
+	}
+}
