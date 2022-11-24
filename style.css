@@ -13572,6 +13572,8 @@ a:hover {
 }
 .page-id-28056 .gala-2022-img.img-fluid {
   width: 70%;
+  margin: 0 auto;
+  display: block;
 }
 .page-id-28056 .give-form-title {
   color: #000 !important;
@@ -13584,5 +13586,33 @@ a:hover {
 .page-id-28056 .gala-btn:focus {
   outline: none !important;
 }
+.page-id-28056 h3.h3-medium {
+  font-size: 3rem;
+}
+
+/** max width */
+@media (max-width: 991.98px) {
+  .page-id-28056 .scholarship-gala-cont .gb-layout-column-wrap {
+    display: initial !important;
+  }
+  .page-id-28056 .scholarship-gala-cont .gb-layout-column-wrap .gb-block-layout-column-inner {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .page-id-28056 h3.h3-medium {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .page-id-28056 h3.h3-medium {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .page-id-28056 h3.h3-medium {
+    font-size: 2rem;
+  }
+}
+/** min width */
 
 /*# sourceMappingURL=style.css.map */
